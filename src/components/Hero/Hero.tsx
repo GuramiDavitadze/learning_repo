@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center text-center px-4">
+    <div
+      id="hero"
+      className="h-screen flex flex-col items-center justify-center text-center px-4"
+    >
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
         Building the <span className="text-indigo-600">Future</span> With React.
       </h1>
