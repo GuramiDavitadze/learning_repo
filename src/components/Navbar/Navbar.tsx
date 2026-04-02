@@ -3,9 +3,8 @@ import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 import { useState } from "react";
-// flex items-center grow justify-between
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="shadow-md rounded-xl md:shadow-none md:rounded-none w-full py-3">
       <div className="flex justify-between items-center h-13 max-w-6xl w-[90%] mx-auto ">
@@ -34,7 +33,7 @@ const Navbar = () => {
           )}
         </button>
         <div
-          className={`${isOpen ? "flex" : "hidden"} w-full md:hidden items-center grow justify-between absolute top-16 left-0 flex-col bg-white`}
+          className={`${isOpen ? "flex" : "hidden"} z-100 pb-10 w-full md:hidden items-center grow justify-between absolute top-16 left-0 flex-col bg-white`}
         >
           <div className="flex flex-col gap-10 w-[90%]">
             <div className="w-full bg-black bg-slate-300  h-[1px]"></div>
